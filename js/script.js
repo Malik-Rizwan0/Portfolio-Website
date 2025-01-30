@@ -42,21 +42,6 @@ navbar.classList.remove('active');
 };
 
 
-/*========== swiper ==========*/
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 50,
-    loop: true,
-    grabCursor: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-});
 
 
 /*========== dark light mode ==========*/
@@ -82,36 +67,3 @@ ScrollReveal().reveal('.home-content h1, .about-img img, .right', { origin: 'lef
 ScrollReveal().reveal('.home-content h3, .home-content p, .about-content, .left', { origin: 'right' });
 
 
-
-/* ========= Stmp ========= */
-
-// function sendEmail() {
-//     const userName = document.querySelector('#userName').value;
-//     const userEmail = document.querySelector('#userEmail').value;
-//     const userPhone = document.querySelector('#userPhone').value;
-//     const userSubject = document.querySelector('#userSubject').value;
-//     const userMessage = document.querySelector('#userMessage').value;
-
-//     if (userName && userEmail && userPhone && userSubject && userMessage) {
-//         Email.send({
-//             Host: "smtp.elasticemail.com",
-//             Username: "malikrizwan1076@gmail.com",
-//             Password: "7C76524F36BE43747A4D1F9ACEF8A8D22A3C",
-//             To: 'develping.hut2022@gmail.com',
-//             From: "malikrizwan1076@gmail.com",
-//             Subject: userSubject,
-//             Body: `
-//                 Name: ${userName} <br>
-//                 Phone #: ${userPhone} <br>
-//                 Email: ${userEmail} <br>
-//                 Message: ${userMessage}
-//             `
-//         }).then(
-//             message => alert("Mail sent successfully: " + message)
-//         ).catch(
-//             error => alert("Error sending email: " + error)
-//         );
-//     } else {
-//         alert("Please fill all fields.");
-//     }
-// }
