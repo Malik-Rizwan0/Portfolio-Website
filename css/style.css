@@ -36,6 +36,7 @@ html {
 }
 
 body {
+    overflow-x: hidden;
     background: var(--bg-color);
     color: var(--text-color);
 }
@@ -310,7 +311,9 @@ span {
 }
 
 .about-img img {
-    width: 40vw;
+    width: 30vw;
+    /* aspect-ratio: 1/1; */
+
 }
 
 .heading {
@@ -352,6 +355,7 @@ span {
 .services-container .services-box {
     flex: 1 1 30rem;
     background: var(--bg-color);
+    height: 100%;
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
     box-shadow: 0 .1rem .5rem var(--shadow-color);
@@ -359,6 +363,7 @@ span {
     border-top: .6rem solid var(--main-color);
     border-bottom: .6rem solid var(--main-color);
     transition: .5s ease;
+    align-items: center;
 }
 
 .services-container .services-box:hover {
@@ -407,15 +412,19 @@ span {
   padding: 10px 20px;
   margin: 0 8px;
   border-radius: 8px;
+  font-size: 12px;
   font-weight: 500;
   cursor: pointer;
   transition: 0.3s;
 }
-
-.filter-btn.active,
 .filter-btn:hover {
-  background-color: #0d6efd;
-  color: #fff;
+    /* color: #754EF9; */
+    background: linear-gradient(  white , #754EF9)
+}
+
+.filter-btn.active{
+    background-color: #754EF9 !important;
+    color: #fff !important;
 }
 
 .portfolio-container {
